@@ -10,7 +10,6 @@ public class GuessGame {
             System.out.print("Guess the number (between 1 and 100): ");
             int guess = scanner.nextInt();
             attempts++;
-            
             if (guess < secretNumber) {
                 System.out.println("Too low! Try again.");
             } else if (guess > secretNumber) {
@@ -20,7 +19,6 @@ public class GuessGame {
                 break;
             }
         }
-        
         scanner.close();
     }
 }
